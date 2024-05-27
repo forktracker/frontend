@@ -1,7 +1,4 @@
-<!--
-// v0 by Vercel.
-// https://v0.dev/t/MLAJWhefAv4
--->
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,120 +6,120 @@
   <title>Blockchain Monitoring Dashboard</title>
   <style>
     /* General Styles */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f3f4f6;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f3f4f6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Header Styles */
-header {
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 16px 0;
-}
+    /* Header Styles */
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 16px 0;
+    }
 
-header .max-w-7xl {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    header .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 16px;
+    }
 
-header .flex.items-center h1 {
-  margin-left: 12px;
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #111827;
-}
+    header .flex.items-center h1 {
+      margin-left: 12px;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #111827;
+    }
 
-header input[type="text"] {
-  width: 100%;
-  max-width: 300px;
-  padding: 8px 12px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  background-color: #f9fafb;
-  transition: border-color 0.3s;
-}
+    header input[type="text"] {
+      width: 100%;
+      max-width: 300px;
+      padding: 8px 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      background-color: #f9fafb;
+      transition: border-color 0.3s;
+    }
 
-header input[type="text"]:focus {
-  border-color: #2563eb;
-  outline: none;
-}
+    header input[type="text"]:focus {
+      border-color: #2563eb;
+      outline: none;
+    }
 
-/* Main Styles */
-main {
-  padding: 32px 16px;
-}
+    /* Main Styles */
+    main {
+      padding: 32px 16px;
+    }
 
-main .max-w-7xl {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+    main .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-main h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #111827;
-  margin-bottom: 24px;
-}
+    main h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 24px;
+    }
 
-main .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 24px;
-}
+    main .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 24px;
+    }
 
-/* Card Styles */
-.card {
-  background-color: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s;
-  overflow: hidden;
-}
+    /* Card Styles */
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s;
+      overflow: hidden;
+    }
 
-.card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    .card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-.card img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+    .card img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
 
-.card .flex-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 24px;
-}
+    .card .flex-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px;
+    }
 
-.card h3 {
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: #111827;
-  margin-top: 12px;
-}
+    .card h3 {
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: #111827;
+      margin-top: 12px;
+    }
 
-.card p {
-  font-size: 0.875rem;
-  color: #6b7280;
-  margin-top: 4px;
-}
-
+    .card p {
+      font-size: 0.875rem;
+      color: #6b7280;
+      margin-top: 4px;
+    }
   </style>
 </head>
-
-
-<div class="flex flex-col w-full min-h-screen bg-gray-100 dark:bg-gray-900">
-  <header class="bg-white dark:bg-gray-800 shadow">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+<body>
+  <header>
+    <div class="container">
       <div class="flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +135,7 @@ main .grid {
         >
           <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.215-6.893m-1.215 6.893-3.94-.694m5.155-6.2L8.29 4.26m5.908 1.042.348-1.97M7.48 20.364l3.126-17.727"></path>
         </svg>
-        <h1 class="ml-3 text-lg font-medium text-gray-900 dark:text-gray-100">Blockchain Monitoring Dashboard</h1>
+        <h1 class="ml-3 text-lg font-medium text-gray-900">Blockchain Monitoring Dashboard</h1>
       </div>
       <div class="flex items-center">
         <div class="relative w-full max-w-md">
@@ -161,24 +158,20 @@ main .grid {
           </div>
           <input
             placeholder="Search blockchains..."
-            class="block w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
+            class="block w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
             type="text"
           />
         </div>
       </div>
     </div>
   </header>
-  <main class="flex-1 overflow-y-auto">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <main>
+    <div class="container">
       <div class="flex items-center justify-between mb-6">
-        <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Upcoming Software Updates</h2>
+        <h2 class="text-2xl font-bold text-gray-900">Upcoming Software Updates</h2>
         <button
           class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center gap-2"
           type="button"
-          id="radix-:r8:"
-          aria-haspopup="menu"
-          aria-expanded="false"
-          data-state="closed"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -203,159 +196,44 @@ main .grid {
         </button>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="rounded-lg border text-card-foreground bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-shadow duration-300"
-          data-v0-t="card"
-        >
+        <div class="card">
           <div class="flex-col space-y-1.5 flex items-center gap-4 p-4">
-            <img
-              src="/placeholder.svg"
-              alt="Bitcoin"
-              width="40"
-              height="40"
-              class="rounded-full"
-              style="aspect-ratio: 40 / 40; object-fit: cover;"
-            />
+            <img src="/placeholder.svg" alt="Bitcoin" />
             <div>
-              <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100">Bitcoin</h3>
-              <p class="text-gray-500 dark:text-gray-400 text-sm">Next Update: May 15, 2024</p>
+              <h3 class="text-lg font-medium text-gray-900">Bitcoin</h3>
+              <p class="text-gray-500 text-sm">Next Update: May 15, 2024</p>
             </div>
           </div>
         </div>
-        <div
-          class="rounded-lg border text-card-foreground bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-shadow duration-300"
-          data-v0-t="card"
-        >
+        <div class="card">
           <div class="flex-col space-y-1.5 flex items-center gap-4 p-4">
-            <img
-              src="/placeholder.svg"
-              alt="Ethereum"
-              width="40"
-              height="40"
-              class="rounded-full"
-              style="aspect-ratio: 40 / 40; object-fit: cover;"
-            />
+            <img src="/placeholder.svg" alt="Ethereum" />
             <div>
-              <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100">Ethereum</h3>
-              <p class="text-gray-500 dark:text-gray-400 text-sm">Next Update: June 30, 2024</p>
+              <h3 class="text-lg font-medium text-gray-900">Ethereum</h3>
+              <p class="text-gray-500 text-sm">Next Update: June 30, 2024</p>
             </div>
           </div>
         </div>
-        <div
-          class="rounded-lg border text-card-foreground bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-shadow duration-300"
-          data-v0-t="card"
-        >
+        <div class="card">
           <div class="flex-col space-y-1.5 flex items-center gap-4 p-4">
-            <img
-              src="/placeholder.svg"
-              alt="Solana"
-              width="40"
-              height="40"
-              class="rounded-full"
-              style="aspect-ratio: 40 / 40; object-fit: cover;"
-            />
+            <img src="/placeholder.svg" alt="Solana" />
             <div>
-              <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100">Solana</h3>
-              <p class="text-gray-500 dark:text-gray-400 text-sm">Next Update: July 1, 2024</p>
+              <h3 class="text-lg font-medium text-gray-900">Solana</h3>
+              <p class="text-gray-500 text-sm">Next Update: July 1, 2024</p>
             </div>
           </div>
         </div>
-        <div
-          class="rounded-lg border text-card-foreground bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-shadow duration-300"
-          data-v0-t="card"
-        >
+        <div class="card">
           <div class="flex-col space-y-1.5 flex items-center gap-4 p-4">
-            <img
-              src="/placeholder.svg"
-              alt="Cardano"
-              width="40"
-              height="40"
-              class="rounded-full"
-              style="aspect-ratio: 40 / 40; object-fit: cover;"
-            />
+            <img src="/placeholder.svg" alt="Cardano" />
             <div>
-              <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100">Cardano</h3>
-              <p class="text-gray-500 dark:text-gray-400 text-sm">Next Update: August 15, 2024</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="rounded-lg border text-card-foreground bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-shadow duration-300"
-          data-v0-t="card"
-        >
-          <div class="flex-col space-y-1.5 flex items-center gap-4 p-4">
-            <img
-              src="/placeholder.svg"
-              alt="Polkadot"
-              width="40"
-              height="40"
-              class="rounded-full"
-              style="aspect-ratio: 40 / 40; object-fit: cover;"
-            />
-            <div>
-              <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100">Polkadot</h3>
-              <p class="text-gray-500 dark:text-gray-400 text-sm">Next Update: September 1, 2024</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="rounded-lg border text-card-foreground bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-shadow duration-300"
-          data-v0-t="card"
-        >
-          <div class="flex-col space-y-1.5 flex items-center gap-4 p-4">
-            <img
-              src="/placeholder.svg"
-              alt="Avalanche"
-              width="40"
-              height="40"
-              class="rounded-full"
-              style="aspect-ratio: 40 / 40; object-fit: cover;"
-            />
-            <div>
-              <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100">Avalanche</h3>
-              <p class="text-gray-500 dark:text-gray-400 text-sm">Next Update: October 1, 2024</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="rounded-lg border text-card-foreground bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-shadow duration-300"
-          data-v0-t="card"
-        >
-          <div class="flex-col space-y-1.5 flex items-center gap-4 p-4">
-            <img
-              src="/placeholder.svg"
-              alt="Polygon"
-              width="40"
-              height="40"
-              class="rounded-full"
-              style="aspect-ratio: 40 / 40; object-fit: cover;"
-            />
-            <div>
-              <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100">Polygon</h3>
-              <p class="text-gray-500 dark:text-gray-400 text-sm">Next Update: November 15, 2024</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="rounded-lg border text-card-foreground bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-shadow duration-300"
-          data-v0-t="card"
-        >
-          <div class="flex-col space-y-1.5 flex items-center gap-4 p-4">
-            <img
-              src="/placeholder.svg"
-              alt="Cosmos"
-              width="40"
-              height="40"
-              class="rounded-full"
-              style="aspect-ratio: 40 / 40; object-fit: cover;"
-            />
-            <div>
-              <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100">Cosmos</h3>
-              <p class="text-gray-500 dark:text-gray-400 text-sm">Next Update: December 1, 2024</p>
+              <h3 class="text-lg font-medium text-gray-900">Cardano</h3>
+              <p class="text-gray-500 text-sm">Next Update: August 14, 2024</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </main>
-</div>
+</body>
+</html>
