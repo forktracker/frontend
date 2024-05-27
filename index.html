@@ -50,6 +50,7 @@
       border-radius: 8px;
       background-color: #f9fafb;
       transition: border-color 0.3s;
+      margin-left: 12px; /* Added margin for spacing */
     }
 
     header input[type="text"]:focus {
@@ -135,30 +136,26 @@
         <h1 class="ml-3 text-lg font-medium text-gray-900">ForkTracker</h1>
       </div>
       <div class="flex items-center">
-        <div class="relative w-full max-w-md">
-          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="h-5 w-5 text-gray-400"
-            >
-              <circle cx="11" cy="11" r="8"></circle>
-              <path d="m21 21-4.3-4.3"></path>
-            </svg>
-          </div>
-          <input
-            placeholder="Search blockchains..."
-            class="block w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
-            type="text"
-          />
-        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-5 w-5 text-gray-400"
+        >
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.3-4.3"></path>
+        </svg>
+        <input
+          placeholder="Search blockchains..."
+          class="block w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
+          type="text"
+        />
       </div>
     </div>
   </header>
